@@ -21,5 +21,5 @@ labels = ["Pre-Viva", "Preparation", "Program", "Output & Result", "Post-Viva", 
 
 if st.button("Split"):
     a = split_mark(tot)
-    df = pd.DataFrame({"Label":labels, "Marks":a})
+    df = pd.DataFrame({"Label":labels, "Total Mark":[10,20,30,10,10,20], "Marks":a})
     st.table(df)
