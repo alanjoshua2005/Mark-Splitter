@@ -9,7 +9,6 @@ def split_mark(mark):
     base = [(i*mark)//total for i in weight]
 
     remainder = mark - sum(base)
-    print(remainder)
     for i in range(remainder):
         base[-1-i] += 1
     
@@ -19,7 +18,7 @@ tot = st.number_input("Enter your mark (out of 100)", max_value=100)
 
 labels = ["Pre-Viva", "Preparation", "Program", "Output & Result", "Post-Viva", "Record"]
 
-if st.button("Split"):
+if st.button("Split Marks"):
     a = split_mark(tot)
     df = pd.DataFrame({"Label":labels, "Total Mark":[10,20,30,10,10,20], "Marks":a})
     st.table(df)
