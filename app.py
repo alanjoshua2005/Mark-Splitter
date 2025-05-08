@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Mark Splitter")
+st.title("Mark Splitter ")
 def split_mark(mark):
     weight = [10,20,30,10,10,20]
     total = sum(weight)
